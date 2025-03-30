@@ -1,21 +1,15 @@
 import React from 'react'
 import Button from '../common/Button'
-
+import { navItems } from '../../lib/DAtaBase'
 const Navber = () => {
-    const navItems = [
-        { label: "Problem & Solution",    link: "#" },
-        { label: 'Industries We Serve',   link: "#" },
-        { label: 'How It Works',          link: "#" },
-        { label: 'Testimonials',          link: "#" },
-        { label: 'FAQs',                  link: "#" },
-      ];
 
   return (
     <>
        
-        <nav className=''>
-            <div>
-                <div className='flex justify-between items-center gap-2.5 px-[30px]'>
+        <nav className='  sticky top-5 z-50  backdrop-blur-lg rounded-full max-w-[1440px] mx-auto '>
+            
+                <div className='flex justify-between items-center gap-2.5  px-2
+                sm:px-5 xl:px-[30px] py-2 sm:py-3.5 xl:py-5  rounded-full   bg-amber-200'>
                     
                     <h2 className='font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl'>GoverningDocs</h2>
                     
@@ -30,8 +24,12 @@ const Navber = () => {
                     </ul>
                     <Button>Get Started Today</Button>
                 </div>
-            </div>
-
+            
+                <div>
+                    <button className='sm:hidden'>
+                        
+                    </button>
+                </div>
         </nav>
        
     </>
