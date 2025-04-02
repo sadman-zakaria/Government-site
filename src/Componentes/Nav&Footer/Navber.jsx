@@ -3,20 +3,23 @@ import Button from '../common/Button'
 import { navItems } from '../../lib/DAtaBase'
 import Logo from '../common/Logo'
 import MobileMenu from '../common/MobileMenu'
-const Navber = () => {
-const [isMenuOpen, setMenuOpen] = useState(false);
+import { Container } from '../common/container'
 
+const Navber = () => {
+
+const [isMenuOpen, setMenuOpen] = useState(false);
 const toggoleMenu =()=>{
     setMenuOpen(!isMenuOpen);
 }
+
   return (
     <>
        
-        <nav className='p-3 bg-transparent'>
-        <div className=' xl:max-w-[1440px]   mx-auto '>
+        <nav className='py-5 sm:py-8 xl:py-10 relative bg-transparent'>
+        <Container >
             
             <div className='flex justify-between items-center gap-2.5  px-2
-            sm:px-4 xl:px-[20px] py-2 sm:py-3.5 xl:py-4  rounded-full   bg-amber-200'>
+            sm:px-4 xl:px-[16px] py-2 sm:py-3.5 xl:py-3  rounded-full   bg-amber-200'>
                 
                 <Logo/>
                 
@@ -32,7 +35,7 @@ const toggoleMenu =()=>{
 
                 <Button className={'lg:block hidden '}>Get Started Today</Button> 
 
-                <button onClick={toggoleMenu} className='lg:hidden flex justify-end'>
+                <button onClick={toggoleMenu} className='lg:hidden flex justify-end cursor-pointer hover:scale-105 transition-all duration-300'>
                     <div className='space-y-1 px-2'>
                         <span className='block w-6 h-0.5 bg-black' />
                         <span className='block w-6 h-0.5 bg-black' />
@@ -46,7 +49,7 @@ const toggoleMenu =()=>{
             
                 
             
-    </div>
+    </Container>
               
              {isMenuOpen && <MobileMenu toggoleMenu={toggoleMenu}/>}
         </nav>

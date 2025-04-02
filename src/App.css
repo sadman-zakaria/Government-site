@@ -16,3 +16,8 @@
 /* .Nuniton{
     font-family: "Nunito", sans-serif;
 } */
+
+.footer-border-color{
+    border-image-source: linear-gradient(180deg, #00d2ff 0%, #059dbe 100% );
+    border-image-slice: 1;
+}
