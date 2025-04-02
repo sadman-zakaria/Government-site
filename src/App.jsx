@@ -2,6 +2,7 @@ import './App.css'
 import Button from './Componentes/common/Button'
 import SectionTitle from './Componentes/common/SectionTitle'
 import TextGradiant from './Componentes/common/TextGradiant'
+import Hero from './Componentes/home/Hero'
 import Footer from './Componentes/Nav&Footer/Footer'
 import Navber from './Componentes/Nav&Footer/Navber'
 
@@ -9,13 +10,13 @@ import Navber from './Componentes/Nav&Footer/Navber'
 const App=()=>{
   return (
     <>
+      <main className='bg-[url(/hero-bg.svg)] bg-no-repeat bg-hero-bg min-h-svh  bg-top'>
       <Navber />
       
-      <div className='h-screen'>
-
-      </div>
+      <Hero/>
       
       <Footer/>
+      </main>
     </>
   )
 }

@@ -15,11 +15,11 @@ const toggoleMenu =()=>{
   return (
     <>
        
-        <nav className='py-5 sm:py-8 xl:py-10 relative bg-transparent'>
+        <nav className='px-3 py-5 sm:py-8 xl:py-10 relative '>
         <Container >
             
             <div className='flex justify-between items-center gap-2.5  px-2
-            sm:px-4 xl:px-[16px] py-2 sm:py-3.5 xl:py-3  rounded-full   bg-amber-200'>
+            sm:px-4 xl:px-[16px] py-2 sm:py-3.5 xl:py-3  rounded-full   bg-white'>
                 
                 <Logo/>
                 
