@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../common/Button'
 import { navItems } from '../../lib/DAtaBase'
 import Logo from '../common/Logo'
-import MobileMe from '../common/MobileMenu'
+import MobileMenu from '../common/MobileMenu'
 const Navber = () => {
+const [isMenuOpen, setMenuOpen] = useState(false);
 
+const toggoleMenu =()=>{
+    setMenuOpen(!isMenuOpen);
+}
   return (
     <>
        
@@ -18,7 +22,7 @@ const Navber = () => {
                 
                 <ul className=' flex items-center justify-center gap-4 xl:gap-6' >
                     {navItems.map(({label,link},index)=>(
-                        <li className='hidden md:flex' key={index}>
+                        <li className='hidden lg:flex' key={index}>
                             <a className='text-[#666666] hover:text-blue-300 transition-colors duration-300 text-sm xl:text-base' href={link} >
                             {label}
                            </a>
@@ -26,15 +30,17 @@ const Navber = () => {
                     ))}
                 </ul>
 
-                <button className='md:hidden flex justify-end'>
-                    <div className='space-y-1'>
+                <Button className={'lg:block hidden '}>Get Started Today</Button> 
+
+                <button onClick={toggoleMenu} className='lg:hidden flex justify-end'>
+                    <div className='space-y-1 px-2'>
                         <span className='block w-6 h-0.5 bg-black' />
                         <span className='block w-6 h-0.5 bg-black' />
                         <span className='block w-6 h-0.5 bg-black' />
                     </div>
                 </button>
 
-                <Button className={'md:block hidden'}>Get Started Today</Button>
+                
             </div>
         
             
@@ -42,7 +48,7 @@ const Navber = () => {
             
     </div>
               
-              <MobileMe/>
+             {isMenuOpen && <MobileMenu toggoleMenu={toggoleMenu}/>}
         </nav>
     </>
   )
