@@ -108,7 +108,7 @@ export const navItems = [
       image: "ronald-richards.png",
       type: "Happy Client",
       review: {
-        stars: 5,
+        stars: 3,
         title: "Outstanding Support!",
         details: "The customer support team was quick to resolve my issues.",
       },
