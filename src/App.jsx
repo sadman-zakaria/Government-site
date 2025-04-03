@@ -5,6 +5,7 @@ import TextGradiant from './Componentes/common/TextGradiant'
 import Hero from './Componentes/home/Hero'
 import ProblemSolution from './Componentes/home/ProblemSolution'
 import ProblemSolutionHeader from './Componentes/home/ProblemSolutionHeader'
+import Review from './Componentes/home/Review'
 import Footer from './Componentes/Nav&Footer/Footer'
 import Navber from './Componentes/Nav&Footer/Navber'
 
@@ -18,6 +19,7 @@ const App=()=>{
       <Hero/>
       <ProblemSolution/>
       <Footer/>
+      <Review/>
       </main>
     </>
   )
