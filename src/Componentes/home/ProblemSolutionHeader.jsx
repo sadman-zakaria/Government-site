@@ -11,11 +11,11 @@ const ProblemSolutionHeader = () => {
 
       <div className='flex items-center justify-center gap-2.5  sm:gap-6'>
       <button className='text-[#00D2FF] bg-[#fffbf7] shadow-lg rounded-full size-9 cursor-pointer hover:scale-90 active:scale-90 transition-all duration-200'>
-        <Arrow className='mx-auto'/>
+        <img src='/feArrowUp2.svg' className='mx-auto'/>
        </button>
        <button className='bg-[#00D2FF] text-white shadow-lg rounded-full size-9 cursor-pointer hover:scale-90 active:scale-90 transition-all duration-200'>
-  <Arrow className='mx-auto'/>
-</button>
+        <Arrow className='mx-auto'/>
+       </button>
       </div>
     </div>
   )
