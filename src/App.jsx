@@ -3,6 +3,8 @@ import Button from './Componentes/common/Button'
 import SectionTitle from './Componentes/common/SectionTitle'
 import TextGradiant from './Componentes/common/TextGradiant'
 import Hero from './Componentes/home/Hero'
+import ProblemSolution from './Componentes/home/ProblemSolution'
+import ProblemSolutionHeader from './Componentes/home/ProblemSolutionHeader'
 import Footer from './Componentes/Nav&Footer/Footer'
 import Navber from './Componentes/Nav&Footer/Navber'
 
@@ -14,7 +16,7 @@ const App=()=>{
       <Navber />
       
       <Hero/>
-      
+      <ProblemSolution/>
       <Footer/>
       </main>
     </>
