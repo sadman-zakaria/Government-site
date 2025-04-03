@@ -18,8 +18,9 @@ const App=()=>{
       
       <Hero/>
       <ProblemSolution/>
-      <Footer/>
+      
       <Review/>
+      <Footer/>
       </main>
     </>
   )
