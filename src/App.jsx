@@ -4,6 +4,7 @@ import SectionTitle from './Componentes/common/SectionTitle'
 import TextGradiant from './Componentes/common/TextGradiant'
 import Brands from './Componentes/home/Brands'
 import Hero from './Componentes/home/Hero'
+import Note from './Componentes/home/Note'
 import ProblemSolution from './Componentes/home/ProblemSolution'
 import ProblemSolutionHeader from './Componentes/home/ProblemSolutionHeader'
 import Review from './Componentes/home/Review'
@@ -22,6 +23,8 @@ const App=()=>{
       
       <Review/>
       <Brands/>
+
+      <Note/>
       <Footer/>
       </main>
     </>
