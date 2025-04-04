@@ -2,6 +2,7 @@ import './App.css'
 import Button from './Componentes/common/Button'
 import SectionTitle from './Componentes/common/SectionTitle'
 import TextGradiant from './Componentes/common/TextGradiant'
+import Brands from './Componentes/home/Brands'
 import Hero from './Componentes/home/Hero'
 import ProblemSolution from './Componentes/home/ProblemSolution'
 import ProblemSolutionHeader from './Componentes/home/ProblemSolutionHeader'
@@ -20,6 +21,7 @@ const App=()=>{
       <ProblemSolution/>
       
       <Review/>
+      <Brands/>
       <Footer/>
       </main>
     </>

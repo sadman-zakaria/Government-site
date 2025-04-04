@@ -16,7 +16,7 @@ const Review = () => {
     <>
        <section className='md:mt-[150px] mt-[60px] bg-[#F6F6F6] md:py-20 py-10'>
           <Container>
-             <SectionTitle gradiant='Our Client' className={'text-center'}>
+             <SectionTitle gradiant='Our Client' className={'text-center '}>
              Reviews From 
              </SectionTitle>
 
