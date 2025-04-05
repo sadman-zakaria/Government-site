@@ -16,6 +16,8 @@ import Navber from './Componentes/Nav&Footer/Navber'
 const App=()=>{
   return (
     <>
+
+    {/* Created by Sadman */}
       <main className='bg-[url(/hero-bg.svg)] bg-no-repeat bg-hero-bg min-h-svh  bg-top'>
       <Navber />
       
