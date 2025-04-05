@@ -3,6 +3,7 @@ import Button from './Componentes/common/Button'
 import SectionTitle from './Componentes/common/SectionTitle'
 import TextGradiant from './Componentes/common/TextGradiant'
 import Brands from './Componentes/home/Brands'
+import Faq from './Componentes/home/Faq'
 import Hero from './Componentes/home/Hero'
 import Note from './Componentes/home/Note'
 import ProblemSolution from './Componentes/home/ProblemSolution'
@@ -23,8 +24,9 @@ const App=()=>{
       
       <Review/>
       <Brands/>
-
+      <Faq />
       <Note/>
+
       <Footer/>
       </main>
     </>
